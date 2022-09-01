@@ -1,0 +1,24 @@
+public class Gmail {
+
+	public static void main(String[] args) {
+		String key = "webdriver.gecko.driver";
+		String value="./downloads/geckodriver.exe";
+		WebDriver driver = new FirefoxDriver();
+		System.setProperty(key,value);
+		driver.get("https://www.gmail.com");
+		Webelement ele1 =  driver.findElement(By.xpath(//input[@type="username"])).sendkeys("Spandy021987");
+				
+		Thread.sleep(1000);
+		
+		Webelement ele2 =  driver.findElement(By.xpath(//input[@type="password"])).sendkeys("bnm778");
+		
+		Thread.sleep(1000);
+		Webelement ele3 =  driver.findElement(By.xpath(//input[@type="submit"]));
+				ele3.click();
+				
+		driver.findElement(By.xpath(//input[@type="text"])) .click();
+				Thread.sleep(2000);
+				
+				
+		
+		}}}
